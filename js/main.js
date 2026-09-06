@@ -90,7 +90,7 @@ Phone / WhatsApp: ${d.phone || ""}
 Message:
 ${d.message || ""}`;
 
-  if (status) { status.textContent = "Your inquiry is ready. Choose email or WhatsApp below."; status.classList.add("show"); }
+  if (status) { status.textContent = "Thank you for your interest in doing business with us. We truly appreciate your enquiry and will get in touch with you shortly."; status.classList.add("show"); }
   const actions = document.querySelector("#form-actions");
   if (actions) {
     actions.hidden = false;

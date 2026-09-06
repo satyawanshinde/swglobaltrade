@@ -44,7 +44,13 @@
 <section class="section"><div class="container contact-grid">
 <aside class="contact-panel reveal"><p class="eyebrow">Business Inquiry</p><h2>Let's talk about your requirement.</h2><p>A clear inquiry helps us understand what you are looking for and how the sourcing discussion should proceed.</p><div class="contact-info"><div><strong>Email</strong><a href="mailto:sw.global.trade.mumbai@gmail.com">sw.global.trade.mumbai@gmail.com</a></div><div><strong>Phone / WhatsApp</strong><span><a href="tel:+917208718157">+91-72087-18157</a></span></div><div><strong>Business Location</strong><span>Mumbai, Maharashtra, India</span></div></div></aside>
 <div class="form-card reveal"><div class="form-status" role="status"></div>
+
+
 <form id="inquiry-form" novalidate><div class="form-grid">
+
+
+<input id="access_key" name="access_key" type="hidden" autocomplete="name" value="5b67dcf9-b715-40ed-a307-897fd415a2de"/>
+
 <div class="field"><label for="name">Full Name *</label><input id="name" name="name" autocomplete="name" required><span class="error"></span></div>
 <div class="field"><label for="company">Company Name</label><input id="company" name="company" autocomplete="organization"><span class="error"></span></div>
 <div class="field"><label for="email">Email Address *</label><input id="email" name="email" type="email" autocomplete="email" required><span class="error"></span></div>
@@ -54,9 +60,16 @@
 <div class="field"><label for="quantity">Required Quantity</label><input id="quantity" name="quantity" placeholder="e.g. 1 container / agreed quantity"><span class="error"></span></div>
 <div class="field"><label for="destination">Destination Port / City</label><input id="destination" name="destination"><span class="error"></span></div>
 <div class="field full"><label for="message">Message *</label><textarea id="message" name="message" required placeholder="Tell us about your product requirements, specifications, packaging or shipment needs."></textarea><span class="error"></span></div>
-<div class="field full"><button class="btn btn-dark" type="submit">Prepare My Inquiry</button></div>
+
+<div class="field full"><button class="btn btn-dark" type="submit">Submit Inquiry</button></div>
 </div></form>
-<div id="form-actions" hidden style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary email-action" href="#">Send by Email</a><a class="btn btn-dark wa-action" href="#" target="_blank" rel="noopener">Send on WhatsApp</a></div>
+<div id="form-actions" hidden style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+
+<!--<button class="btn btn-primary email-action" type="submit">Send by Email</button>
+<a class="btn btn-primary email-action" href="#" id="emailEnquirySubmit">Send by Email</a>
+<a class="btn btn-dark wa-action" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>-->
+
+</div>
 <p style="font-size:11px;color:var(--muted);margin-top:20px">Static website note: replace the configurable email, WhatsApp number and address in <code>js/main.js</code> and this page before launch.</p>
 </div></div></section></main>
 
@@ -73,6 +86,8 @@
   </div>
   <div class="container footer-bottom"><span>© 2026 SW Global Trade. All Rights Reserved.</span><span>India → Global Markets</span></div>
 </footer>
+
+<script src="js/contact.js"></script>
 
 
 <script src="js/main.js"></script>
